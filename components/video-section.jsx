@@ -8,184 +8,181 @@ import { Badge } from "@/components/ui/badge"
 import { ChevronLeft, ChevronRight, CheckCircle, Clock, Eye } from "lucide-react"
 
 const SESSIONS_DATA = {
-  basico: {
-    title: "Básico",
+  bicicleta_estatica: {
+    title: "Bicicleta Estática",
     videos: [
       {
-        id: "basico-1",
-        title: "Introducción a la Fisioterapia",
-        description: "Conceptos básicos y primeros ejercicios de movilidad",
+        id: "bicicleta-1",
+        title: "Recuperación cardiovascular tras lesión de rodilla",
+        description: "Ejercicio controlado en bicicleta estática para mejorar la circulación y fortalecer sin impacto articular.",
         duration: "8:30",
-        category: "Introducción",
+        category: "Rehabilitación",
         videoUrl: "/placeholder-video.mp4",
         thumbnail: "/placeholder.svg?height=200&width=300",
       },
       {
-        id: "basico-2",
-        title: "Ejercicios de Respiración",
-        description: "Técnicas de respiración para relajación y recuperación",
-        duration: "6:15",
-        category: "Respiración",
+        id: "bicicleta-2",
+        title: "Movilización suave para mejorar la flexión de rodilla",
+        description: "Ejercicios con bicicleta estática para recuperar movilidad articular después de cirugía.",
+        duration: "10:00",
+        category: "Movilidad",
+        videoUrl: "/placeholder-video.mp4",
+        thumbnail: "/placeholder.svg?height=200&width=300",
+      },
+    ],
+  },
+  leg_press: {
+    title: "Leg Press",
+    videos: [
+      {
+        id: "legpress-1",
+        title: "Rehabilitación de fuerza en pierna tras lesión de ligamento",
+        description: "Ejercicios adaptados en leg press para fortalecer sin sobrecargar articulaciones.",
+        duration: "12:00",
+        category: "Rehabilitación",
         videoUrl: "/placeholder-video.mp4",
         thumbnail: "/placeholder.svg?height=200&width=300",
       },
       {
-        id: "basico-3",
-        title: "Movilidad Articular Básica",
-        description: "Ejercicios suaves para mantener la movilidad",
-        duration: "10:45",
+        id: "legpress-2",
+        title: "Progresión controlada para recuperar movilidad de cadera",
+        description: "Uso del leg press para aumentar rango de movimiento después de inmovilización.",
+        duration: "13:40",
         category: "Movilidad",
         videoUrl: "/placeholder-video.mp4",
         thumbnail: "/placeholder.svg?height=200&width=300",
       },
       {
-        id: "basico-4",
-        title: "Estiramientos Generales",
-        description: "Rutina de estiramientos para todo el cuerpo",
-        duration: "12:20",
-        category: "Estiramientos",
+        id: "legpress-3",
+        title: "Fortalecimiento de glúteos y cuádriceps post-lesión muscular",
+        description: "Entrenamiento para mejorar estabilidad y función muscular.",
+        duration: "14:10",
+        category: "Fortalecimiento",
         videoUrl: "/placeholder-video.mp4",
         thumbnail: "/placeholder.svg?height=200&width=300",
       },
     ],
   },
-  rehabilitacion: {
-    title: "Rehabilitación",
+  banco_pesas: {
+    title: "Banco de Pesas",
     videos: [
       {
-        id: "rehab-1",
-        title: "Rehabilitación de Rodilla",
-        description: "Rutina completa para fortalecer y rehabilitar la articulación de la rodilla",
+        id: "banco-1",
+        title: "Recuperación de fuerza en hombro post-luxación",
+        description: "Ejercicios con banco de pesas para fortalecer rotadores y mejorar estabilidad.",
+        duration: "15:00",
+        category: "Rehabilitación",
+        videoUrl: "/placeholder-video.mp4",
+        thumbnail: "/placeholder.svg?height=200&width=300",
+      },
+      {
+        id: "banco-2",
+        title: "Ejercicios para mejorar rango articular tras cirugía de brazo",
+        description: "Movilización activa asistida con pesas ligeras para recuperar funcionalidad.",
+        duration: "13:30",
+        category: "Movilidad",
+        videoUrl: "/placeholder-video.mp4",
+        thumbnail: "/placeholder.svg?height=200&width=300",
+      },
+    ],
+  },
+  eliptica: {
+    title: "Elíptica",
+    videos: [
+      {
+        id: "eliptica-1",
+        title: "Entrenamiento de bajo impacto para rehabilitación de cadera",
+        description: "Sesiones en elíptica para mejorar fuerza y movilidad sin dolor.",
+        duration: "10:15",
+        category: "Rehabilitación",
+        videoUrl: "/placeholder-video.mp4",
+        thumbnail: "/placeholder.svg?height=200&width=300",
+      },
+      {
+        id: "eliptica-2",
+        title: "Mejora de resistencia cardiovascular tras lesión de pierna",
+        description: "Ejercicio aeróbico adaptado para evitar sobrecarga articular.",
+        duration: "12:00",
+        category: "Resistencia",
+        videoUrl: "/placeholder-video.mp4",
+        thumbnail: "/placeholder.svg?height=200&width=300",
+      },
+      {
+        id: "eliptica-3",
+        title: "Técnicas de respiración y relajación para reducir fatiga",
+        description: "Estrategias para controlar la respiración y favorecer la recuperación.",
+        duration: "9:40",
+        category: "Relajación",
+        videoUrl: "/placeholder-video.mp4",
+        thumbnail: "/placeholder.svg?height=200&width=300",
+      },
+    ],
+  },
+  remo_indoor: {
+    title: "Remo Indoor",
+    videos: [
+      {
+        id: "remo-1",
+        title: "Recuperación de fuerza en espalda baja tras lesión",
+        description: "Ejercicios de remo para fortalecer la zona lumbar sin impacto.",
         duration: "12:30",
         category: "Rehabilitación",
         videoUrl: "/placeholder-video.mp4",
         thumbnail: "/placeholder.svg?height=200&width=300",
       },
-      {
-        id: "rehab-2",
-        title: "Recuperación de Hombro",
-        description: "Ejercicios progresivos para rehabilitación del hombro",
-        duration: "14:15",
-        category: "Rehabilitación",
-        videoUrl: "/placeholder-video.mp4",
-        thumbnail: "/placeholder.svg?height=200&width=300",
-      },
-      {
-        id: "rehab-3",
-        title: "Rehabilitación de Tobillo",
-        description: "Ejercicios específicos para recuperación post-esguince",
-        duration: "9:30",
-        category: "Rehabilitación",
-        videoUrl: "/placeholder-video.mp4",
-        thumbnail: "/placeholder.svg?height=200&width=300",
-      },
-      {
-        id: "rehab-4",
-        title: "Recuperación Lumbar",
-        description: "Programa de ejercicios para problemas de espalda baja",
-        duration: "16:45",
-        category: "Rehabilitación",
-        videoUrl: "/placeholder-video.mp4",
-        thumbnail: "/placeholder.svg?height=200&width=300",
-      },
     ],
   },
-  avanzado: {
-    title: "Avanzado",
+  prensa_hombros: {
+    title: "Prensa de Hombros",
     videos: [
       {
-        id: "avanzado-1",
-        title: "Fortalecimiento Avanzado",
-        description: "Rutinas intensivas de fortalecimiento muscular",
-        duration: "18:20",
+        id: "prensa-1",
+        title: "Rehabilitación tras lesión de manguito rotador",
+        description: "Ejercicios para fortalecer hombro con carga progresiva segura.",
+        duration: "13:40",
+        category: "Rehabilitación",
+        videoUrl: "/placeholder-video.mp4",
+        thumbnail: "/placeholder.svg?height=200&width=300",
+      },
+      {
+        id: "prensa-2",
+        title: "Mejora de rango articular y movilidad activa",
+        description: "Técnicas para recuperar flexibilidad y control motor.",
+        duration: "12:30",
+        category: "Movilidad",
+        videoUrl: "/placeholder-video.mp4",
+        thumbnail: "/placeholder.svg?height=200&width=300",
+      },
+      {
+        id: "prensa-3",
+        title: "Fortalecimiento funcional para actividades diarias",
+        description: "Ejercicios para mejorar la fuerza y resistencia del hombro.",
+        duration: "15:20",
         category: "Fortalecimiento",
         videoUrl: "/placeholder-video.mp4",
         thumbnail: "/placeholder.svg?height=200&width=300",
       },
-      {
-        id: "avanzado-2",
-        title: "Pilates Terapéutico Avanzado",
-        description: "Ejercicios complejos de pilates para rehabilitación",
-        duration: "22:15",
-        category: "Pilates",
-        videoUrl: "/placeholder-video.mp4",
-        thumbnail: "/placeholder.svg?height=200&width=300",
-      },
-      {
-        id: "avanzado-3",
-        title: "Entrenamiento Funcional",
-        description: "Ejercicios funcionales para deportistas",
-        duration: "20:30",
-        category: "Funcional",
-        videoUrl: "/placeholder-video.mp4",
-        thumbnail: "/placeholder.svg?height=200&width=300",
-      },
-      {
-        id: "avanzado-4",
-        title: "Ejercicios Pliométricos",
-        description: "Entrenamiento explosivo para recuperación deportiva",
-        duration: "15:45",
-        category: "Pliométrico",
-        videoUrl: "/placeholder-video.mp4",
-        thumbnail: "/placeholder.svg?height=200&width=300",
-      },
     ],
   },
-  terapeutico: {
-    title: "Terapéutico",
-    videos: [
-      {
-        id: "terapeutico-1",
-        title: "Técnicas de Relajación",
-        description: "Métodos de relajación muscular y mental",
-        duration: "11:30",
-        category: "Relajación",
-        videoUrl: "/placeholder-video.mp4",
-        thumbnail: "/placeholder.svg?height=200&width=300",
-      },
-      {
-        id: "terapeutico-2",
-        title: "Masaje Terapéutico",
-        description: "Técnicas de automasaje para alivio del dolor",
-        duration: "13:45",
-        category: "Masaje",
-        videoUrl: "/placeholder-video.mp4",
-        thumbnail: "/placeholder.svg?height=200&width=300",
-      },
-      {
-        id: "terapeutico-3",
-        title: "Ejercicios Cervicales",
-        description: "Movimientos específicos para cuello y cervicales",
-        duration: "10:15",
-        category: "Cervicales",
-        videoUrl: "/placeholder-video.mp4",
-        thumbnail: "/placeholder.svg?height=200&width=300",
-      },
-      {
-        id: "terapeutico-4",
-        title: "Terapia Postural",
-        description: "Corrección y mejora de la postura corporal",
-        duration: "14:20",
-        category: "Postural",
-        videoUrl: "/placeholder-video.mp4",
-        thumbnail: "/placeholder.svg?height=200&width=300",
-      },
-    ],
-  },
-}
+};
+
+
 
 export default function VideoSection() {
   const searchParams = useSearchParams()
   const router = useRouter()
-  const currentSession = searchParams.get("session") || "basico"
+ // const currentSession = searchParams.get("session") || "basico"
+ const currentSession = searchParams.get("session")
 
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0)
   const [watchedVideos, setWatchedVideos] = useState([])
   const [isVideoPlaying, setIsVideoPlaying] = useState(false)
-  const [isLoading, setIsLoading] = useState(true) // Nuevo estado
+  const [isLoading, setIsLoading] = useState(true) 
 
-  const sessionData = SESSIONS_DATA[currentSession] || SESSIONS_DATA.basico
-  const videos = sessionData.videos
+  const sessionData = SESSIONS_DATA.hasOwnProperty(currentSession)
+  ? SESSIONS_DATA[currentSession]
+  : Object.values(SESSIONS_DATA)[0];
+  const videos = sessionData.videos;
 
   // Cargar videos vistos desde localStorage al inicializar
   useEffect(() => {
@@ -292,24 +289,43 @@ export default function VideoSection() {
 
           {/* Menú Simple de Sesiones */}
           <div className="flex justify-center mb-8">
-            <div className="bg-white/90 backdrop-blur-sm rounded-full p-2 shadow-lg">
-              <div className="flex space-x-2">
-                {Object.entries(SESSIONS_DATA).map(([key, session]) => (
-                  <button
-                    key={key}
-                    onClick={() => changeSession(key)}
-                    className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-                      currentSession === key
-                        ? "bg-gradient-to-r from-orange-500 to-red-500 text-white shadow-md"
-                        : "text-gray-600 hover:text-orange-600 hover:bg-orange-50"
-                    }`}
-                  >
-                    {session.title}
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div>
+  <div className="bg-white/90 backdrop-blur-sm rounded-full p-2 shadow-lg">
+    
+    {/* Móvil: SELECT más ancho */}
+    <select
+      value={currentSession}
+      onChange={(e) => changeSession(e.target.value)}
+      className="block sm:hidden min-w-[200px] px-4 py-2 rounded-full text-sm font-medium 
+                 bg-white text-gray-700 shadow-inner focus:outline-none focus:ring-2 
+                 focus:ring-orange-400 transition duration-200"
+    >
+      {Object.entries(SESSIONS_DATA).map(([key, session]) => (
+        <option key={key} value={key}>
+          {session.title}
+        </option>
+      ))}
+    </select>
+
+    {/* Escritorio: BOTONES */}
+    <div className="hidden sm:flex space-x-2">
+      {Object.entries(SESSIONS_DATA).map(([key, session]) => (
+        <button
+          key={key}
+          onClick={() => changeSession(key)}
+          className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+            currentSession === key
+              ? "bg-gradient-to-r from-orange-500 to-red-500 text-white shadow-md"
+              : "text-gray-600 hover:text-orange-600 hover:bg-orange-50"
+          }`}
+        >
+          {session.title}
+        </button>
+      ))}
+    </div>
+
+  </div>
+</div>
+
 
           {/* Loading State */}
           <div className="max-w-4xl mx-auto mb-12">
@@ -380,24 +396,43 @@ export default function VideoSection() {
 
         {/* Menú Simple de Sesiones */}
         <div className="flex justify-center mb-8">
-          <div className="bg-white/90 backdrop-blur-sm rounded-full p-2 shadow-lg">
-            <div className="flex space-x-2">
-              {Object.entries(SESSIONS_DATA).map(([key, session]) => (
-                <button
-                  key={key}
-                  onClick={() => changeSession(key)}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-                    currentSession === key
-                      ? "bg-gradient-to-r from-orange-500 to-red-500 text-white shadow-md"
-                      : "text-gray-600 hover:text-orange-600 hover:bg-orange-50"
-                  }`}
-                >
-                  {session.title}
-                </button>
-              ))}
-            </div>
-          </div>
-        </div>
+  <div className="bg-white/90 backdrop-blur-sm rounded-full p-2 shadow-lg">
+    
+    {/* Móvil: SELECT más ancho */}
+    <select
+      value={currentSession}
+      onChange={(e) => changeSession(e.target.value)}
+      className="block sm:hidden min-w-[200px] px-4 py-2 rounded-full text-sm font-medium 
+                 bg-white text-gray-700 shadow-inner focus:outline-none focus:ring-2 
+                 focus:ring-orange-400 transition duration-200"
+    >
+      {Object.entries(SESSIONS_DATA).map(([key, session]) => (
+        <option key={key} value={key}>
+          {session.title}
+        </option>
+      ))}
+    </select>
+
+    {/* Escritorio: BOTONES */}
+    <div className="hidden sm:flex space-x-2">
+      {Object.entries(SESSIONS_DATA).map(([key, session]) => (
+        <button
+          key={key}
+          onClick={() => changeSession(key)}
+          className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+            currentSession === key
+              ? "bg-gradient-to-r from-orange-500 to-red-500 text-white shadow-md"
+              : "text-gray-600 hover:text-orange-600 hover:bg-orange-50"
+          }`}
+        >
+          {session.title}
+        </button>
+      ))}
+    </div>
+
+  </div>
+</div>
+
 
         {/* Reproductor de Video Principal */}
         <div className="max-w-4xl mx-auto mb-12">
@@ -459,7 +494,7 @@ export default function VideoSection() {
                     className="bg-gradient-to-r from-orange-400 to-red-400 hover:from-orange-500 hover:to-red-500 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <ChevronLeft className="h-4 w-4 mr-2" />
-                    Anterior
+                  
                   </Button>
 
                   <div className="text-center">
@@ -473,7 +508,7 @@ export default function VideoSection() {
                     disabled={currentVideoIndex === videos.length - 1}
                     className="bg-gradient-to-r from-red-400 to-pink-400 hover:from-red-500 hover:to-pink-500 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    Siguiente
+                    
                     <ChevronRight className="h-4 w-4 ml-2" />
                   </Button>
                 </div>
