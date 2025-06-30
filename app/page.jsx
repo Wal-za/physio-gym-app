@@ -210,8 +210,10 @@ export default function FisioterapiaPage() {
         </div>
       </section>
 
-      {/* Testimonials Carousel */}
+      {/* 
+      testimonios
       <TestimonialsCarousel />
+      */}
 
       {/* Contact Section */}
       <section id="contacto" className="py-20 px-4 bg-gradient-to-r from-orange-500 to-red-500">
@@ -267,7 +269,13 @@ export default function FisioterapiaPage() {
               </div>
             </div>
 
-            <ExperienceForm />
+              {/*
+              formulario opiniones
+              <ExperienceForm /> 
+              
+              
+              */}
+            
           </div>
         </div>
       </section>
