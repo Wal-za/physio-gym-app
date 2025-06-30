@@ -1,3 +1,4 @@
+import { Suspense } from "react"
 import VideoSection from "@/components/video-section"
 import { Button } from "@/components/ui/button"
 import { Heart, ArrowLeft } from "lucide-react"
@@ -6,7 +7,6 @@ import Link from "next/link"
 export default function VideosPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-orange-50 to-red-50">
-      {/* Header */}
       <header className="bg-white/95 backdrop-blur-md shadow-lg sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
@@ -29,8 +29,9 @@ export default function VideosPage() {
         </div>
       </header>
 
-      {/* Video Section */}
-      <VideoSection />
+      <Suspense fallback={<div className="p-4 text-center text-orange-500">Cargando videos...</div>}>
+        <VideoSection />
+      </Suspense>
     </div>
   )
 }
