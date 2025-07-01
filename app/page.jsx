@@ -111,14 +111,10 @@ export default function FisioterapiaPage() {
                   <div className="text-center">
                     <div className="bg-gradient-to-r from-orange-500 to-red-500 rounded-full p-6 inline-block mb-4">
                       <Play className="h-12 w-12 text-white" />
-                    </div>
-                    <h4 className="text-2xl font-bold text-gray-800 mb-2">4 Sesiones Disponibles</h4>
-                    <p className="text-gray-600 mb-6">Básico, Rehabilitación, Avanzado y Terapéutico</p>
+                    </div>                   
+              
                     <div className="grid grid-cols-2 gap-4 text-sm text-gray-600 mb-6">
-                      <div>✓ Ejercicios básicos</div>
-                      <div>✓ Rehabilitación</div>
-                      <div>✓ Nivel avanzado</div>
-                      <div>✓ Terapia especializada</div>
+                      
                     </div>
                   </div>
                 </div>
